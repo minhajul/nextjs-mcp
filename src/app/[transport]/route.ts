@@ -2,6 +2,7 @@ import {createMcpHandler} from "@vercel/mcp-adapter";
 
 const handler = createMcpHandler(
     (server) => {
+        // @ts-ignore
         server.tool(
             "recommender",
             "Simple recommender",
@@ -28,3 +29,5 @@ const handler = createMcpHandler(
         }
     }
 )
+
+export default handler;
